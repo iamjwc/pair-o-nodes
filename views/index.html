@@ -1,0 +1,32 @@
+<!doctype html> 
+<html lang="en"> 
+ <head> 
+  <meta charset="utf-8"> 
+  <title></title> 
+  <style> 
+   html { font:2em/1.2 Arial, sans-serif }
+   body { margin:1em auto; max-width:20em; }
+   h1 { margin:1em 0; font-size:1.5em }
+   a { color:crimson }
+   a:visited { text-decoration:none }
+   a:hover { color:mediumspringgreen }
+  </style> 
+  <script>
+    var ws = new WebSocket("ws://localhost:8008");
+
+    ws.onopen = function(evt) {
+      ws.send("ready");
+    };
+
+    ws.onmessage = function(evt) {
+      alert( "Received Message: "  +  evt.data);
+    };
+
+    ws.onclose = function(evt) { };
+    
+  </script>
+ </head> 
+ <body> 
+ </body> 
+</html> 
+ 

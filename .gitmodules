@@ -1,0 +1,9 @@
+[submodule "deps/node.ws.js"]
+	path = deps/node.ws.js
+	url = http://github.com/ncr/node.ws.js.git
+[submodule "deps/node.paperboy.js"]
+	path = deps/node.paperboy.js
+	url = http://github.com/felixge/node-paperboy.git
+[submodule "deps/node.multipart.js"]
+	path = deps/node.multipart.js
+	url = http://github.com/isaacs/multipart-js.git
